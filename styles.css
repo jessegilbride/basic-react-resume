@@ -1,10 +1,19 @@
 * {box-sizing: border-box;}
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: lightgreen;
+}
+
 body, a {
   background-color: #333;
   color: lemonchiffon;
 }
 
-a:hover {
-  color: lightgreen;
+header, #introduction {
+  text-align: center;
 }

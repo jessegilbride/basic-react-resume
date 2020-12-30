@@ -18,7 +18,79 @@
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<script src="index.js" type="text/babel"></script>
+<script type="text/babel">
+function Header() {
+  return (
+    <header>
+      <h1 className="title">Resume of Sally Smithers</h1>
+    </header>
+  );
+}
+
+function Intro() {
+  return (
+    <section id="introduction">
+      <div id="header-image">
+        <img src="./images/sally.jpg" alt="portrait of Sally" />
+      </div>
+      <p>Hi I'm Sally I'm 25 and below this line you'll find more information about me.</p>
+    </section>
+  );
+}
+
+function Education() {
+  return (
+    <section id="Education">
+      <p>I have studied at:</p>
+      <ul>
+        <li>IES BEZMILIANA</li>
+        <li>Minnesota University</li>
+      </ul>
+    </section>
+  );
+}
+
+function Work() {
+  return (
+    <section id="work">
+      <p>I have worked at:</p>
+      <div id="work_list">
+        <ul>
+          <li>Github -- as Engineer during 2018 and there I have to do nerdy stuff. <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></li>
+          <li>Jetbrains -- as Project manager during 2019 and I'm still working there. My work consists of <em>assumenda autem dolorem doloremque.</em></li>
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+function Contact() {
+  return (
+    <section id="Contact-section">
+      <p>Contact me via:</p>
+        <address id="Contact-info">
+          <p><a href="https://github.com/jessegilbride/basic-react-resume">GitHub</a></p>
+          <p>Email: <a href="mailto://sally@IntenetExplorer.old">sally@IntenetExplorer.old</a></p>
+          <p>Phone: <a href="tel:+34100572415">+34 100 57 24 15</a></p>
+        </address>
+    </section>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <Intro />
+      <Education />
+      <Work />
+      <Contact />
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('#root'));
+</script>
 
 </body>
 </html>
