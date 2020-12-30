@@ -1,0 +1,10 @@
+* {box-sizing: border-box;}
+
+body, a {
+  background-color: #333;
+  color: lemonchiffon;
+}
+
+a:hover {
+  color: lightgreen;
+}
